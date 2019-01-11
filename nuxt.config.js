@@ -55,7 +55,24 @@ module.exports = {
 	axios: {
 		// See https://github.com/nuxt-community/axios-module#options
 	},
-
+	generate: {
+        routes: function() {
+            var Prismic = require("prismic-javascript");
+            return Prismic.getApi("https://valuedvoice.cdn.prismic.io/api/v2")
+                .then(function(api) {
+                    return api.query([
+                            Prismic.Prismic.Predicates.at('document.type', 'blog_posts')
+                        ]).then(function(response) {
+                            return routes = response.results.map((r) => {
+                                    return {
+                                        route: '/blog/'+r.uid,
+                                        payload: r
+                                    };
+                            });
+                    });
+                });
+        }
+    },
 	/*
   ** Build configuration
   */
