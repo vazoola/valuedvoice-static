@@ -238,8 +238,8 @@ export default {
         return {
             title: "ValuedVoice | Go-to Platform for influencers",
             meta: [
-    			{ hid: 'twitter:image', name:'twitter:image', content: '@/assets/images/main-banner-1.png' },
-    			{ hid: 'og:image', name:'og:image', content: '@/assets/images/main-banner-1.png' },
+    			{ hid: 'twitter:image', name:'twitter:image', content: '~/assets/images/main-banner-1.png' },
+    			{ hid: 'og:image', name:'og:image', content: '~/assets/images/main-banner-1.png' },
             ]
         }
     },
