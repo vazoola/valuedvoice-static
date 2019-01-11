@@ -61,7 +61,7 @@ module.exports = {
             return Prismic.getApi("https://valuedvoice.cdn.prismic.io/api/v2")
                 .then(function(api) {
                     return api.query([
-                            Prismic.Prismic.Predicates.at('document.type', 'blog_posts')
+                            Prismic.Predicates.at('document.type', 'blog_posts')
                         ]).then(function(response) {
                             return routes = response.results.map((r) => {
                                     return {
