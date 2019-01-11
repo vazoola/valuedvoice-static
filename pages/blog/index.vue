@@ -3,9 +3,9 @@
         <section class="hero is-dark has-text-centered">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">Blog Page</h1>
+                    <h1 class="title">ValuedVoice Blog</h1>
                     <h2 class="subtitle">
-                        Blog subtitle goes here.
+                        Articles to help influencers reach their goals.
                     </h2>
                 </div>
             </div>
