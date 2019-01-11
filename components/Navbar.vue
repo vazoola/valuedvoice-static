@@ -2,8 +2,8 @@
     <nav class="navbar is-fixed-top">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
-                <img src="~/assets/images/logo.svg" alt="" class="is-hidden-mobile">
-                <img src="~/assets/images/vv-logo.svg" alt="" class="is-hidden-desktop is-hidden-fullhd is-hidden-tablet is-hidden-widescreen">
+                <img src="/images/logo.svg" alt="" class="is-hidden-mobile">
+                <img src="/images/vv-logo.svg" alt="" class="is-hidden-desktop is-hidden-fullhd is-hidden-tablet is-hidden-widescreen">
             </a>
             <div class="navbar-item ml-auto">
                 <div class="field is-grouped">

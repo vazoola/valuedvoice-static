@@ -6,7 +6,7 @@
                 <div class="columns">
                     <div class="column">
                         <div class="has-text-centered-mobile mb-2">
-                            <img src="~/~/assets/images/logo.svg" class="is-hidden-desktop is-hidden-fullhd is-hidden-tablet is-hidden-widescreen">
+                            <img src="/images/logo.svg" class="is-hidden-desktop is-hidden-fullhd is-hidden-tablet is-hidden-widescreen">
                         </div>
                          <h1 class="title">
                              You've built an audience.<br>
@@ -29,9 +29,9 @@
                   <div class="hero-images">
                       <div style="margin: 0 auto;">
 
-                          <img src="~/~/assets/images/main-banner-1.png" alt="" class="rounded-corners box-shadow banner-image-1">
-                          <img src="~/assets/images/main-banner-2.png" alt="" class="rounded-corners box-shadow banner-image-2">
-                          <img src="~/assets/images/main-banner-3.png" alt=""  class="rounded-corners box-shadow banner-image-3">
+                          <img src="/images/main-banner-1.png" alt="" class="rounded-corners box-shadow banner-image-1">
+                          <img src="/images/main-banner-2.png" alt="" class="rounded-corners box-shadow banner-image-2">
+                          <img src="/images/main-banner-3.png" alt=""  class="rounded-corners box-shadow banner-image-3">
 
                       </div>
 
@@ -148,9 +148,9 @@
                     <h1 class="title is-2 is-marginless">You have questions. We have answers.</h1>
                     <div class="is-hidden-mobile">
                         <div class="questions-images">
-                            <img src="~/assets/images/questions-banner-1.png" alt="" class="rounded-corners box-shadow questions-image-1">
-                            <img src="~/assets/images/questions-banner-2.png" alt="" class="rounded-corners box-shadow questions-image-2">
-                            <img src="~/assets/images/questions-banner-3.png" alt="" class="rounded-corners box-shadow questions-image-3">
+                            <img src="/images/questions-banner-1.png" alt="" class="rounded-corners box-shadow questions-image-1">
+                            <img src="/images/questions-banner-2.png" alt="" class="rounded-corners box-shadow questions-image-2">
+                            <img src="/images/questions-banner-3.png" alt="" class="rounded-corners box-shadow questions-image-3">
                         </div>
                     </div>
                 </div>
@@ -238,8 +238,8 @@ export default {
         return {
             title: "ValuedVoice | Go-to Platform for influencers",
             meta: [
-    			{ hid: 'twitter:image', name:'twitter:image', content: '~/assets/images/main-banner-1.png' },
-    			{ hid: 'og:image', name:'og:image', content: '~/assets/images/main-banner-1.png' },
+    			{ hid: 'twitter:image', name:'twitter:image', content: '/images/main-banner-1.png' },
+    			{ hid: 'og:image', name:'og:image', content: '/images/main-banner-1.png' },
             ]
         }
     },
