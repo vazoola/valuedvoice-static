@@ -1,0 +1,151 @@
+.hero.is-dark {
+    background-color: #001021;
+}
+.hero.is-fullheight.background-image {
+    background:
+    linear-gradient(
+      rgba(0, 16, 33, 0.80),
+      rgba(0, 16, 33, 0.80)
+    ),
+    url('~assets/images/background.jpg');
+    background-size: cover;
+}
+@media only screen and (max-width: 1199px) {
+    .hero-images {
+        position: relative;
+        top: 200px;
+    }
+    .special {
+        padding-top: 7rem;
+    }
+    .hero.main-banner {
+        height: 140vh;
+    }
+}
+.hero-images {
+    position: relative;
+}
+
+@media only screen and (min-width: 1088px) {
+    .hero.main-banner > .hero-body {
+        display: flex;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 786px) {
+    .hero.main-banner {
+        height: 100vh;
+    }
+}
+
+@mixin for-size($range) {
+    $phone-upper-boundary: 769px;
+    $tablet-portrait-upper-boundary: 900px;
+    $tablet-landscape-upper-boundary: 1200px;
+    $desktop-upper-boundary: 1800px;
+
+    @if $range == phone-only {
+      @media (max-width: #{$phone-upper-boundary - 1}) { @content; }
+    } @else if $range == tablet-portrait-up {
+      @media (min-width: $phone-upper-boundary) { @content; }
+    } @else if $range == tablet-landscape-up {
+      @media (min-width: $tablet-portrait-upper-boundary) { @content; }
+    } @else if $range == desktop-up {
+      @media (min-width: $tablet-landscape-upper-boundary) { @content; }
+    } @else if $range == big-desktop-up {
+      @media (min-width: $desktop-upper-boundary) { @content; }
+    }
+  }
+
+
+    .banner-image-1 {
+        height: auto;
+        position: absolute;
+        @include for-size(phone-only) {
+            width: 80%;
+            right: 9%;
+            top: 3px;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 70%;
+            right: 8%;
+            top: 60px;
+        }
+        @include for-size(tablet-landscape-up) {
+            width: 74%;
+            right: 8%;
+            top: 80px;
+        }
+        @include for-size(desktop-up) {
+            width: 57%;
+            right: 22%;
+            top: 240px;
+        }
+
+    }
+    .banner-image-2 {
+        height: auto;
+        position: absolute;
+        @include for-size(phone-only) {
+            width: 50%;
+            right: 50%;
+            top: -180px;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 47%;
+            right: 42%;
+            top: -117px;
+        }
+        @include for-size(tablet-landscape-up) {
+            width: 50%;
+            right: 40%;
+            top: -110px;
+        }
+        @include for-size(desktop-up) {
+            width: 44%;
+            right: 48%;
+            top: 30px;
+        }
+
+    }
+    .banner-image-3 {
+        height: auto;
+        position: absolute;
+        @include for-size(phone-only) {
+            width: 47%;
+            right: -1%;
+            top: -200px;
+        }
+        @include for-size(tablet-portrait-up) {
+            width: 46%;
+            right: -3%;
+            top: -141px;
+        }
+        @include for-size(tablet-landscape-up) {
+            width: 45%;
+            right: -2%;
+            top: -133px;
+        }
+        @include for-size(desktop-up) {
+            width: 44%;
+            right: 8%;
+            top: -20px;
+        }
+
+    }
+@media screen and ( max-height: 600px ){
+    .banner-image-1 {
+        display: none;
+    }
+}
+@media screen and ( max-height: 380px ){
+    .banner-image-1 {
+        display: none;
+    }
+    .banner-image-2 {
+        display: none;
+    }
+    .banner-image-3 {
+        display: none;
+    }
+}

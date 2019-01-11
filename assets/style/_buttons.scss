@@ -1,0 +1,22 @@
+// .button.is-primary {
+
+// }
+.button {
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 0;
+    padding-left: 1.75em;
+padding-right: 1.75em;
+}
+.button.is-success {
+    background: #00B900;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.10) 100%);
+    box-shadow: 0 2px 24px 0 rgba(0,0,0,0.10);
+    border-radius: 4px;
+}
+.button.is-white {
+    box-shadow: 0 2px 24px 0 rgba(0,0,0,0.10);
+}
+// .button {
+
+// }
