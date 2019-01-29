@@ -1,4 +1,5 @@
 <template lang="html">
+<div>
     <nav class="navbar is-fixed-top">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
@@ -37,6 +38,7 @@
             </div>
         </div>
     </nav>
+</div>
 </template>
 
 <script>
