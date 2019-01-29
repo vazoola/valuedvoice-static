@@ -27,6 +27,16 @@
         </div>
 
     </nav>
+
+    <nav style="margin-top:72px; height: 40px;" class="level">
+        <div class="level-item has-text-centered">
+            <div>
+                <p style="color: #f0ba69; font-weight: bold">
+                    The Vazoola platform will be down for maintenance Januaray 29. Starting @ 10PM EST for about 2 hours.
+                </p>
+            </div>
+        </div>
+    </nav>
 </template>
 
 <script>
