@@ -23,6 +23,14 @@
                         <div class="content" v-html="post.html" />
                     </div>
                 </div>
+                
+                <div v-if="post.embed" class="columns">
+                    <div class="column is-8 is-offset-2">
+                        <div class="video-container" v-html="post.embed.html" />
+                    </div>
+                </div>
+
+
             </div>
         </section>
 
@@ -34,7 +42,7 @@
 export default {
     async asyncData({ params, error, payload }) {
         //preps post data
-        var compilePost = function(post) {
+        var compilePost = function(post, d) {
             var PrismicDOM = require('prismic-dom');
             //format the post content to html
             post.html = PrismicDOM.RichText.asHtml(post.content, function(doc) {
@@ -59,7 +67,7 @@ export default {
                     return api.query(
                         Prismic.Predicates.at('my.blog_posts.uid', params.slug)
                     ).then(function(response) {
-                        return compilePost(response.results[0].data);
+                        return compilePost(response.results[0].data, response.results[0]);
                     });
                 });
         }
@@ -85,4 +93,19 @@ export default {
 </script>
 
 <style lang="css">
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 </style>
