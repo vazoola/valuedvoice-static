@@ -50,7 +50,7 @@ export default {
             .then(function(api) {
                 return api.query(
                     Prismic.Predicates.at('document.type', 'blog_posts'),
-                    { orderings : "[my.blog_posts.publish_date desc]"},
+                    { pageSize: 100, orderings : "[my.blog_posts.publish_date desc]"},
                 ).then(function(response) {
                     return {
                         resources: response.results,
