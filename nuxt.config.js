@@ -60,9 +60,9 @@ module.exports = {
             var Prismic = require("prismic-javascript");
             return Prismic.getApi("https://valuedvoice.cdn.prismic.io/api/v2")
                 .then(function(api) {
-                    return api.query([
-                            Prismic.Predicates.at('document.type', 'blog_posts')
-                        ]).then(function(response) {
+                    return api.query(
+						[ Prismic.Predicates.at('document.type', 'blog_posts')],
+						{ pageSize: 100 }).then(function(response) {
                             return routes = response.results.map((r) => {
                                     return {
                                         route: '/blog/'+r.uid,
