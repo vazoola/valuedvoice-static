@@ -15,7 +15,7 @@
             <h2>ValuedVoice</h2>
             <p>2505 Main Street, Suite 212</p>
             <p>Stratford, CT 06615</p>
-            <p>1-855-399-7515</p>
+            <p>1-855-205-2884</p>
         </div>
     </div>
 
