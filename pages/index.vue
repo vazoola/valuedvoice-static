@@ -121,7 +121,7 @@
               <p class="subtitle is-5 has-text-centered">You set the price you need, and we deliver</p>
             </div>
             <div class="column is-half has-text-centered mb-2">
-              <p class="title is-3 has-text-centered">Over 20 Opportuinity Types</p>
+              <p class="title is-3 has-text-centered">Over 20 Opportunity Types</p>
               <p class="subtitle is-5 has-text-centered">Pick the Opportunities you want to see</p>
             </div>
             <div class="column is-half has-text-centered mb-2">
