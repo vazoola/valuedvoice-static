@@ -2,7 +2,7 @@
 
 <footer class="footer">
     <div class="content">
-        <p>&copy; 2018 VALUED VOICE</p>
+        <p>© {{ new Date().getFullYear() }} VALUED VOICE</p>
         <span class="is-pulled-right">
             <a href="/blog">Blog</a> |
             <a href="/contact">Contact</a> | <a href="/terms">Terms</a> | <a href="/privacy">Privacy</a>

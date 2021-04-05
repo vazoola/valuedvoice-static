@@ -3,7 +3,7 @@
         <section class="hero is-primary has-text-centered">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">Terms and Condtions</h1>
+                    <h1 class="title">Terms and Conditions</h1>
                 </div>
             </div>
         </section>
@@ -15,7 +15,7 @@
             </ul>
         </div>
         <section class="content page-content ">
-            <iframe style="width: 100%;height: 1200px;" src="https://docs.google.com/viewer?embedded=true&amp;url=https://s3.amazonaws.com/lvgtandc/tandc.pdf"></iframe>
+            <iframe style="width: 100%;height: 1200px;" src="https://docs.google.com/document/d/e/2PACX-1vSnGIs6IGDinYc7Ryt8drxZbgC4WnlTUGeGGoPVpDEzWbVR7WX0jqR4kmUplLis0QOm2-4pvAhu2Jid/pub"></iframe>
         </section>
     </div>
 </template>
